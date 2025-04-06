@@ -9,14 +9,14 @@ function User() {
 
     useEffect(()=>{
         const fetchData = async()=>{
-            const response=await axios.get("http://localhost:5000/api/getAll")
+            const response=await axios.get("https://crud-184r.onrender.com/api/getAll")
             setUsers(response.data);
         }
         fetchData();
     },[])
 
     const deletedUser = async(userId) =>{
-        await axios.delete(`http://localhost:5000/api/delete/${userId}`)
+        await axios.delete(`https://crud-184r.onrender.com/api/delete/${userId}`)
         .then((response)=>{
             setUsers((prevUser)=>prevUser.filter((user)=> user._id !== userId))
             // console.log(response);

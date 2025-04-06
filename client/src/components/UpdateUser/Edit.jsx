@@ -22,7 +22,7 @@ const Edit = () => {
     }
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/api/getSingleUser/${id}`)
+        axios.get(`https://crud-184r.onrender.com/api/getSingleUser/${id}`)
         .then((response)=>{
             // console.log(response)
             setUser(response.data)
@@ -37,7 +37,7 @@ const Edit = () => {
 
     const submitForm = async(e)=>{
         e.preventDefault();
-        await axios.put(`http://localhost:5000/api/update/${id}`,user)
+        await axios.put(`https://crud-184r.onrender.com/api/update/${id}`,user)
         .then((response)=>{
             // console.log(response);
             toast.success(response.data.msg,{position:"top-right"})
