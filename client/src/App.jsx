@@ -16,7 +16,7 @@ function App() {
       element:<AddUser/>,
     },
     {
-      path:"/edit",
+      path:"/edit/:id",
       element:<Edit/>,
     },
   ])
