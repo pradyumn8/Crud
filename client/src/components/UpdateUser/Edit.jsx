@@ -13,7 +13,7 @@ const Edit = () => {
                     <input type="text" id='fname' name='fname' autoComplete='off' placeholder='First Name' />
                 </div>
                 <div className="inputGroup">
-                    <label htmlFor="lname">First Name</label>
+                    <label htmlFor="lname">Last Name</label>
                     <input type="text" id='lname' name='lname' autoComplete='off' placeholder='Last Name' />
                 </div>
                 <div className="inputGroup">
